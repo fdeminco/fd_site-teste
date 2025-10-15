@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biomédico Perito Judicial | Assistência Técnica e Laudos</title>
+    <!-- Carregamento do Tailwind CSS para Estilização Responsiva -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Estilização para o botão flutuante do WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366; /* Cor oficial do WhatsApp */
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+        /* Efeito de brilho para os CTAs principais */
+        .cta-shine {
+            box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+        /* Fonte Inter (padrão) */
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Configuração do Link de WhatsApp (Personalize) -->
+    <script>
+        // Substitua pelo seu número de telefone e código do país (sem + ou 00)
+        // DADOS FICTÍCIOS PARA DEMONSTRAÇÃO
+        const YOUR_PHONE_NUMBER = "5521987654321"; // Exemplo: 5521987654321
+        const PREFILLED_MESSAGE = "Olá, encontrei sua Landing Page e gostaria de solicitar um orçamento para Assistência Técnica/Perícia Judicial.";
+
+        function getWhatsAppLink(message) {
+            const encodedMessage = encodeURIComponent(message);
+            return `https://wa.me/${YOUR_PHONE_NUMBER}?text=${encodedMessage}`;
+        }
+    </script>
+    
+    <!-- Botão Flutuante do WhatsApp -->
+    <a id="whatsappFloat" href="#" target="_blank" class="whatsapp-float">
+        <!-- Ícone do WhatsApp (SVG Simples) -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-7 h-7 fill-white">
+            <path d="M380.9 97.1C339.8 55.7 283.4 32 224.2 32c-122.9 0-224 100.2-224 223.5 0 39.8 11 79.5 32 113.6l-20.2 74.3 75.8-19.8c32.7 17.5 69 26.6 106.4 26.6h.7c122.8 0 223.9-100.2 223.9-223.5 0-59.3-23.7-115.7-64.8-157.1zm-156.7 348.8h-.7c-30 0-59.9-7.9-85.9-22.7l-6-3.5-64 16.7 17.7-65.7-3.8-6.1c-22.7-36.4-34.6-77.9-34.6-121.2C51.2 189 122.8 112 224.2 112s173 77 173 173.5c0 96.3-71.6 173.5-173 173.5zm96.3-138.3c-4.4-2.2-26.1-12.8-30.2-14.2s-7-2.2-10 2.2-11.5 14.2-14 17.1-5 3.3-9.3 1.1c-4.4-2.2-18.6-6.8-35.4-21.9-13.1-11.8-22-26.4-24.6-30.8s-.3-6.8 2-9.1c2-2 4.4-5 6.6-7.4 2.2-2.2 2.9-4.7 4.4-7.4s.7-5-1.1-7.4c-2.2-2.4-10-24-13.7-32.9-3.7-8.9-7.5-7.5-10-7.5-2.6 0-5.5-.3-8.5-.3s-7.8 1.1-12 5.5-16.1 15.6-16.1 38c0 22.4 16.5 44 18.8 47s32.6 50.2 79.1 71.4c11.5 5.2 20.4 8.3 27.2 10.6 10.9 3.7 13.9 3.1 19.3 1.9s30.2-12.3 34.4-24.2c4.2-12 8.4-22.4 8.4-24s-4.4-12.3-7-15.3z"/>
+        </svg>
+    </a>
+
+    <!-- Seção Principal (Primeira Dobra) -->
+    <header class="bg-indigo-700 text-white pt-16 pb-20 md:pt-24 md:pb-32 rounded-b-3xl shadow-lg">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            
+            <!-- Nome/Título Secundário -->
+            <p class="text-indigo-200 font-semibold uppercase tracking-widest text-sm mb-3">Biomédico Perito Judicial & Assistente Técnico</p>
+            
+            <!-- Título Principal (H1) - Foco no Benefício -->
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+                Laudos Periciais **Assertivos** e **Imparciais** para a Justiça.
+            </h1>
+            
+            <!-- Subtítulo / Proposta de Valor -->
+            <p class="text-xl md:text-2xl text-indigo-100 mb-10 max-w-2xl mx-auto">
+                Especialista em Perícias de **Toxicologia, DNA e Análises Clínicas**. Atendimento rápido e focado em advogados e partes.
+            </p>
+            
+            <!-- CTA Principal (WhatsApp) -->
+            <a id="ctaHeader" href="#" target="_blank" class="inline-block px-10 py-4 bg-green-500 hover:bg-green-600 text-white text-xl font-bold rounded-xl transition duration-300 cta-shine transform hover:scale-105">
+                <span class="flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 h-5 mr-3 fill-white"><path d="M380.9 97.1C339.8 55.7 283.4 32 224.2 32c-122.9 0-224 100.2-224 223.5 0 39.8 11 79.5 32 113.6l-20.2 74.3 75.8-19.8c32.7 17.5 69 26.6 106.4 26.6h.7c122.8 0 223.9-100.2 223.9-223.5 0-59.3-23.7-115.7-64.8-157.1z"/></svg>
+                    FALE AGORA PELO WHATSAPP
+                </span>
+            </a>
+            <p class="mt-4 text-indigo-200 text-sm">Resposta imediata para consultas urgentes.</p>
+        </div>
+    </header>
+
+    <!-- Seção de Autoridade (Quem Sou Eu) -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
+            
+            <!-- Foto e Credenciais -->
+            <div class="w-full md:w-1/3 text-center">
+                <img src="https://placehold.co/200x200/4F46E5/FFFFFF?text=Dr.+E+M" alt="Foto profissional do Biomédico Perito" class="rounded-full w-40 h-40 mx-auto object-cover border-4 border-indigo-500 shadow-xl">
+                <h2 class="text-2xl font-bold mt-4">Dr. Eduardo Mattos</h2>
+                <p class="text-indigo-600 font-semibold">Biomédico (CRBM 123456) | Perito Judicial</p>
+                <div class="mt-3 space-y-1 text-sm text-gray-600">
+                    <p>Membro do Cadastro Nacional de Peritos (CNAI)</p>
+                    <p>Pós-graduado em Biologia Molecular</p>
+                </div>
+            </div>
+
+            <!-- Declaração de Missão -->
+            <div class="w-full md:w-2/3">
+                <h3 class="text-3xl font-bold text-gray-900 mb-4">Compromisso com a Verdade e Rigor Técnico.</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    Minha missão como Perito Judicial e Assistente Técnico é fornecer à Justiça e às partes envolvidas pareceres e laudos periciais com o máximo **rigor científico e clareza didática**. Entendo a urgência e a complexidade dos processos, garantindo um trabalho que transforma dados técnicos em subsídios jurídicos sólidos.
+                </p>
+                <p class="mt-4 text-gray-700 leading-relaxed font-semibold">
+                    Atendimento exclusivo para demandas do Judiciário Estadual e Federal.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Serviços/Especialidades -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-10">Minhas Áreas de Expertise Biomédica no Processo Judicial</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Serviço 1: Toxicologia -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-indigo-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-8 h-8 mx-auto text-indigo-600 mb-4 fill-current"><path d="M495.2 78.4c-7.9-10.3-21.7-13-33.6-7.3L32 232.8c-14.7 6.9-24.8 21.6-26.6 38.6s7.9 34.2 23.6 44.5L144 384l23 111.9c.7 3.5 1.5 7 2.6 10.5 4.1 13 14.7 23.6 27.7 27.7 3.5 1.1 7 1.9 10.5 2.6L496 295.2c16-16 16-41.9 0-57.9l-41.1-41.1zm-80 80l-41 41-128 128-41 41L368 256l47.2-47.2z"/></svg>
+                    <h3 class="text-xl font-semibold mb-2">Perícia Toxicológica</h3>
+                    <p class="text-sm text-gray-600">Análise e interpretação de exames toxicológicos (cabelo, urina, sangue) em casos de acidentes, trabalhistas ou de guarda.</p>
+                </div>
+                
+                <!-- Serviço 2: DNA/Genética -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-indigo-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-8 h-8 mx-auto text-indigo-600 mb-4 fill-current"><path d="M224 416c-35.3 0-64-28.7-64-64s28.7-64 64-64 64 28.7 64 64-28.7 64-64 64zm-32-192V80c0-17.7-14.3-32-32-32s-32 14.3-32 32v144c0 17.7 14.3 32 32 32s32-14.3 32-32zM320 224v144c0 17.7 14.3 32 32 32s32-14.3 32-32V224c0-17.7-14.3-32-32-32s-32 14.3-32 32zM288 80v144c0 35.3-28.7 64-64 64s-64-28.7-64-64V80c0-35.3-28.7-64-64-64S0 44.7 0 80v144c0 88.4 71.6 160 160 160v144c0 17.7 14.3 32 32 32s32-14.3 32-32V400c88.4 0 160-71.6 160-160V80c0-35.3-28.7-64-64-64s-64 28.7-64 64z"/></svg>
+                    <h3 class="text-xl font-semibold mb-2">DNA e Vínculo Genético</h3>
+                    <p class="text-sm text-gray-600">Esclarecimento de laudos de paternidade ou identificação humana, com foco na análise de metodologias e resultados.</p>
+                </div>
+
+                <!-- Serviço 3: Análises Clínicas -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-indigo-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="w-8 h-8 mx-auto text-indigo-600 mb-4 fill-current"><path d="M434.7 64.9c-2.4-1.7-4.9-3.2-7.5-4.7C401.7 34.3 371.4 16 339 16c-48.4 0-85.3 22.1-118.3 49.3-15.6 12.8-30 27.2-43.3 43.4-2.5 3-5 6.1-7.4 9.4-44.1 61.3-44.1 138.8 0 200.1 2.4 3.3 4.9 6.4 7.4 9.4 13.3 16.2 27.7 30.6 43.3 43.4 33 27.2 69.9 49.3 118.3 49.3 32.4 0 62.7-18.3 88.2-38.6 2.5-1.5 5-3 7.5-4.7 44.1-61.3 44.1-138.8 0-200.1zM192 256a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zM576 432V176c0-44.2-35.8-80-80-80H472V48c0-26.5-21.5-48-48-48h-48c-26.5 0-48 21.5-48 48v48H240V48c0-26.5-21.5-48-48-48H144C117.5 0 96 21.5 96 48v48H48c-44.2 0-80 35.8-80 80V432c0 44.2 35.8 80 80 80H496c44.2 0 80-35.8 80-80z"/></svg>
+                    <h3 class="text-xl font-semibold mb-2">Laudos Laboratoriais</h3>
+                    <p class="text-sm text-gray-600">Interpretação técnica de exames clínicos, erros de procedimento laboratorial ou contestação de resultados para processos de erro médico ou indenizatórios.</p>
+                </div>
+                
+            </div>
+            
+            <!-- Chamada de Suporte ao Advogado -->
+            <p class="mt-12 text-lg text-gray-700 max-w-2xl mx-auto">
+                **Precisa de um quesito técnico?** Forneço suporte completo na elaboração de quesitos e na análise de laudos da parte contrária.
+            </p>
+
+            <!-- CTA Secundário (WhatsApp) -->
+            <div class="mt-10">
+                <a id="ctaServices" href="#" target="_blank" class="inline-block px-8 py-3 bg-green-500 hover:bg-green-600 text-white text-lg font-bold rounded-xl transition duration-300 cta-shine">
+                    <span class="flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 h-4 mr-3 fill-white"><path d="M380.9 97.1C339.8 55.7 283.4 32 224.2 32c-122.9 0-224 100.2-224 223.5 0 39.8 11 79.5 32 113.6l-20.2 74.3 75.8-19.8c32.7 17.5 69 26.6 106.4 26.6h.7c122.8 0 223.9-100.2 223.9-223.5 0-59.3-23.7-115.7-64.8-157.1z"/></svg>
+                        Fale com o Perito agora
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Prova Social (Depoimentos) -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">O que Advogados Dizem</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Depoimento 1 (Advogado) -->
+                <div class="bg-indigo-50 p-6 rounded-xl border-l-4 border-indigo-600 shadow-md">
+                    <p class="italic text-gray-700 mb-4">"O parecer técnico fornecido foi decisivo. A clareza na explicação dos dados toxicológicos simplificou o entendimento do Juiz, permitindo uma decisão favorável ao cliente."</p>
+                    <p class="font-semibold text-indigo-700">- Dr. Ricardo Almeida, Advogado Cível</p>
+                </div>
+                
+                <!-- Depoimento 2 (Advogada) -->
+                <div class="bg-indigo-50 p-6 rounded-xl border-l-4 border-indigo-600 shadow-md">
+                    <p class="italic text-gray-700 mb-4">"Rapidez e precisão. O Dr. Eduardo Mattos elaborou os quesitos de forma estratégica, o que nos deu grande vantagem na condução da perícia oficial de vínculo genético."</p>
+                    <p class="font-semibold text-indigo-700">- Dra. Camila Mendes, Escritório de Família</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé e Informações Legais -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="text-sm mb-2">© 2025 Dr. Eduardo Mattos. Todos os direitos reservados. CRBM 123456.</p>
+            <p class="text-xs text-gray-400">Esta Landing Page tem como único objetivo a captação de clientes para Perícia Judicial e Assistência Técnica, com foco no contato via WhatsApp.</p>
+        </div>
+    </footer>
+
+    <!-- Script para aplicar o link do WhatsApp aos botões -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const link = getWhatsAppLink(PREFILLED_MESSAGE);
+            
+            // Aplica o link ao botão flutuante
+            const floatButton = document.getElementById('whatsappFloat');
+            if(floatButton) {
+                floatButton.href = link;
+            }
+
+            // Aplica o link ao CTA principal (header)
+            const ctaHeader = document.getElementById('ctaHeader');
+            if(ctaHeader) {
+                ctaHeader.href = link;
+            }
+
+            // Aplica o link ao CTA secundário (services)
+            const ctaServices = document.getElementById('ctaServices');
+            if(ctaServices) {
+                ctaServices.href = link;
+            }
+
+            console.log("Links de WhatsApp configurados para:", link);
+        });
+    </script>
+
+</body>
+</html>
